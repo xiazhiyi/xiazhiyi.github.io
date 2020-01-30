@@ -193,7 +193,7 @@
                 <a href="/2020/01/30/hello-world/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview3.jpg" alt="Hello World">
+                        <img src="/imgs/preview/preview2.jpg" alt="Hello World">
                     </div>
                     <div class="info">
                         
@@ -227,7 +227,7 @@
             <p style="text-align: center;">
                 <a href="/2020/01/30/hello-world/">
                     
-                    <img src="/imgs/preview/preview3.jpg" alt="Hello World">
+                    <img src="/imgs/preview/preview2.jpg" alt="Hello World">
                 </a>
             </p>
         </div>
@@ -265,6 +265,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -487,6 +489,30 @@
 <script src="/js/blog.js"></script>
 
 
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = ''
+      window.commentConfig.repo = ''
+      window.commentConfig.client_id = ''
+      window.commentConfig.client_secret = ''
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: '',
+        repo: '',
+        client_id: '',
+        client_secret: '',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
